@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--reset css-->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            -webkit-text-size-adjust: none;
+        }
+
+        ul, ol {
+            list-style: none
+        }
+
+        a {
+            text-decoration: none
+        }
+
+        select, button, input, select, textarea {
+            border: 0;
+            outline: 0;
+            resize: none;
+            -webkit-appearance: none;
+        }
+
+        .pointer {
+            cursor: pointer
+        }
+    </style>
+</head>
+<body>
+
+<script src="js/jquery-2.js"></script>
+<script src="js/js.cookie.js"></script>
+<script src="js/track.js"></script>
+<!--微信分享-->
+<!--<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+<!--<script src="js/share.js"></script>-->
+<!--fastClick-->
+<script src="js/fastclick.js"></script>
+<script>
+    $(function() {
+        FastClick.attach(document.body);
+    });
+    var myURL = Track.parseURL(location.href);
+    var origin = myURL.params.origin || 'direct';
+
+    function track(tracking) {
+        _hmt && _hmt.push(
+            ['_trackEvent', origin, 'mobile', tracking]
+        )
+    }
+
+    $(document).on('click', '[data-name]', function (e) {
+        e.stopPropagation();
+        var text = $(this).data('name')
+        track(text)
+    })
+</script>
+</body>
+</html>
