@@ -1,0 +1,36 @@
+@-moz-keyframes fadeOutDownBig {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+}
+@-webkit-keyframes fadeOutDownBig {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+}
+@-o-keyframes fadeOutDownBig {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+}
+@keyframes fadeOutDownBig {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 2000px, 0);
+  }
+}
