@@ -23,7 +23,10 @@ bg($src,$center=false, $retina=false,$width = null, $height = null)
     background-image url($src)
     background-size $width $height
     background-repeat no-repeat
+    width $width
+    height $height
     if $center
+      width 100%
       background-position center
     if $retina
       for $dppx, $index in $-image-dppx-range
