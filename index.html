@@ -25,11 +25,11 @@
         FastClick.attach(document.body);
     });
     var myURL = Track.parseURL(location.href);
-    var origin = myURL.params.origin || 'direct';
-
+    // var origin = myURL.params.origin || 'direct';
+    var hmsr = myURL.params.hmsr || 'direct';
     function track(tracking) {
         _hmt && _hmt.push(
-            ['_trackEvent', origin, 'mobile', tracking]
+            ['_trackEvent', hmsr, 'mobile', tracking]
         )
     }
 
