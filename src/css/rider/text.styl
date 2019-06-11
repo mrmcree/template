@@ -1,0 +1,24 @@
+@import "rider/clockhand.styl" //封装position padding margin _
+@import "rider/unit.styl" //转换rem em px
+@import "rider/shape.styl" //画三角 圆形
+@import "rider/typography.styl" //清除浮动 省略号 字体
+@import "rider/normalize.styl"
+@import "rider/animate.styl" //动画工具
+//@import "rider/retina.styl"
+@import "rider/breakpoint.styl" //断点 媒体查询
+@import "rider/image.styl"
+//normalize()
+.text1
+  absolute: 0 0 _
+  height :rem(10px)
+  triangle('top',10px,'red')
+.text2
+  ellipsis:1
+  clearfix()
+  animate('bounce',1s,'ease')
+  +below(3)
+    width 100px
+  +above(3)
+    width 400px;
+.text3
+  bg('../asset/dog4.jpg',$center=true);

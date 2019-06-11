@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "global": "^4.4.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-stylus": "^2.7.0"
+  },
+  "name": "@nicoyangcool/h5cli",
+  "version": "1.0.1",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrmcree/template.git"
+  },
+  "bugs": {
+    "url": "http://github.com/mrmcree/template/issues"
+  },
+  "homepage":"http://github.com/mrmcree/template/#readme.md"
+}
