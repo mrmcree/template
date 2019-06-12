@@ -6,4 +6,4 @@
 > npm install @nicoyangcool/h5-cli
 
 ## Usage
-### npm run build
+> npm run build
